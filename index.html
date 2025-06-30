@@ -1,8 +1,17 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
+  <!-- AOS Library -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   <style>
   body {
+    <!-- AOS Script -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
     background: url('hari-body.jpg') no-repeat center center fixed;
     background-size: cover;
     margin: 0;
@@ -69,6 +78,9 @@
       color: white;
       position: relative;
     }
+    <div data-aos="fade-up">My Portfolio Section</div>
+<div data-aos="zoom-in">My Projects</div>
+
 
     .overlay {
       background: rgba(0, 0, 0, 0.6);
