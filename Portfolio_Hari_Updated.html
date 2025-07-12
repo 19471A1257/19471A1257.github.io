@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Harichandraprasad Sriram | Portfolio</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+
+  <style>
+    :root {
+      --text-light: #111827;
+      --text-dark: #f3f4f6;
+      --card-light: #ffffff;
+      --card-dark: #374151;
+      --bg-dark: #1f2937;
+      --accent: #2563eb;
+    }
+
+    [data-theme="dark"] {
+      background-color: var(--bg-dark);
+      color: var(--text-dark);
+    }
+
+    body[data-theme="light"] {
+      background: url('tech-bg.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: var(--text-light);
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      transition: 0.3s;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2 {
+      color: var(--accent);
+      border-bottom: 2px solid var(--accent);
+      display: inline-block;
+      margin-top: 2rem;
+    }
+
+    section {
+      background: rgba(255, 255, 255, 0.8);
+      border-radius: 10px;
+      padding: 1.5rem;
+      margin-top: 2rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .toggle {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: var(--accent);
+      color: white;
+      border: none;
+      padding: 0.4rem 0.8rem;
+      border-radius: 5px;
+      cursor: pointer;
+      z-index: 10;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    .button {
+      display: inline-block;
+      background-color: var(--accent);
+      color: white;
+      padding: 0.6rem 1.2rem;
+      border-radius: 5px;
+      margin-top: 1rem;
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      margin: 2rem 0;
+      color: #9ca3af;
+    }
+
+    a {
+      color: var(--accent);
+    }
+  </style>
+</head>
+<body data-theme="light">
+
+  <button class="toggle" onclick="toggleTheme()">🌙</button>
+
+  <div class="container">
+    <h1>Harichandraprasad Sriram</h1>
+    <p>Java Full Stack Developer | React | Spring Boot | AWS</p>
+
+    <section data-aos="fade-up">
+      <h2>About Me</h2>
+      <p>I’m a passionate Java Full Stack Developer with a Master’s in Information Systems from Saint Louis University. I specialize in building secure, scalable applications using Spring Boot, React, and cloud tools like AWS and Docker.</p>
+    </section>
+
+    <section data-aos="fade-right">
+      <h2>Skills</h2>
+      <ul>
+        <li>Java, Spring Boot, REST APIs</li>
+        <li>React, JavaScript, HTML, CSS</li>
+        <li>AWS, Docker, Jenkins, Git</li>
+        <li>MySQL, MongoDB</li>
+      </ul>
+    </section>
+
+    <section data-aos="fade-left">
+      <h2>Projects</h2>
+      <p><strong>Student Management System</strong>: Full CRUD app with JWT auth using Spring Boot + React.<br/>
+        <a href="https://github.com/HarichandraprasadSri/student-management" target="_blank">GitHub Repo</a>
+      </p>
+      <p><strong>Portfolio Website</strong>: Responsive developer portfolio.<br/>
+        <a href="https://github.com/HarichandraprasadSri/portfolio-site" target="_blank">GitHub Repo</a>
+      </p>
+    </section>
+
+    <section data-aos="zoom-in">
+      <h2>Resume</h2>
+      <a href="Hari-Chandra-Prasad-Resume.pdf" download class="button">📄 Download Resume</a>
+    </section>
+
+    <section data-aos="flip-left">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:hariprasad45x@gmail.com">hariprasad45x@gmail.com</a></p>
+      <p>Phone: <a href="tel:3145757249">+1 314-575-7249</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/hari-sriram-801777241" target="_blank">linkedin.com/in/hari-sriram-801777241</a></p>
+      <p>GitHub: <a href="https://github.com/HarichandraprasadSri" target="_blank">github.com/HarichandraprasadSri</a></p>
+    </section>
+
+    <footer>
+      &copy; 2025 Harichandraprasad Sriram — All Rights Reserved
+    </footer>
+  </div>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    function toggleTheme() {
+      const html = document.documentElement;
+      const current = html.getAttribute('data-theme');
+      html.setAttribute('data-theme', current === 'dark' ? 'light' : 'dark');
+    }
+  </script>
+</body>
+</html>
